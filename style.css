@@ -1196,7 +1196,7 @@ footer {
   .above-texts--div {
     border-bottom: 1px solid var(--light-grey);
 
-    padding: 50px 0;
+    padding: 50px 20px;
   }
 
   .above-text--div {
@@ -1290,7 +1290,8 @@ footer {
     grid-template-rows: repeat(4, 67px);
     grid-auto-flow: column;
 
-    gap: 30px;
+    row-gap: 30px;
+    column-gap: 3px;
 
     justify-content: center;
     align-items: start;
@@ -1340,12 +1341,15 @@ footer {
 }
 
 @media (width >= 1024px) {
+  .below-texts--div {
+    gap: 30px;
+  }
 }
 
 @media (width >= 1280px) {
-  /* body {
-    background-color: pink;
-  } */
+  .below-texts--div {
+    gap: 35px;
+  }
 }
 
 @media (width >= 1536px) {
